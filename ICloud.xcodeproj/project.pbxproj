@@ -16,6 +16,7 @@
 		3ABF10142473D29000B9B3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABF10122473D29000B9B3A1 /* LaunchScreen.storyboard */; };
 		3ABF101F2473D29000B9B3A1 /* ICloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF101E2473D29000B9B3A1 /* ICloudTests.swift */; };
 		3ABF102A2473D29000B9B3A1 /* ICloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF10292473D29000B9B3A1 /* ICloudUITests.swift */; };
+		3ABF103A2473D4CB00B9B3A1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABF10392473D4CB00B9B3A1 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3ABF10252473D29000B9B3A1 /* ICloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABF10292473D29000B9B3A1 /* ICloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudUITests.swift; sourceTree = "<group>"; };
 		3ABF102B2473D29000B9B3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABF10372473D4C500B9B3A1 /* ICloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ICloud.entitlements; sourceTree = "<group>"; };
+		3ABF10392473D4CB00B9B3A1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABF103A2473D4CB00B9B3A1 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				3ABF101D2473D29000B9B3A1 /* ICloudTests */,
 				3ABF10282473D29000B9B3A1 /* ICloudUITests */,
 				3ABF10022473D28E00B9B3A1 /* Products */,
+				3ABF10382473D4CB00B9B3A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +106,7 @@
 		3ABF10032473D28E00B9B3A1 /* ICloud */ = {
 			isa = PBXGroup;
 			children = (
+				3ABF10372473D4C500B9B3A1 /* ICloud.entitlements */,
 				3ABF10042473D28E00B9B3A1 /* AppDelegate.swift */,
 				3ABF10062473D28E00B9B3A1 /* SceneDelegate.swift */,
 				3ABF100B2473D28E00B9B3A1 /* ContentView.swift */,
@@ -137,6 +143,14 @@
 				3ABF102B2473D29000B9B3A1 /* Info.plist */,
 			);
 			path = ICloudUITests;
+			sourceTree = "<group>";
+		};
+		3ABF10382473D4CB00B9B3A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ABF10392473D4CB00B9B3A1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ICloud/ICloud.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ICloud/Preview Content\"";
 				DEVELOPMENT_TEAM = AWWNRLG3FV;
@@ -458,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ICloud/ICloud.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ICloud/Preview Content\"";
 				DEVELOPMENT_TEAM = AWWNRLG3FV;
