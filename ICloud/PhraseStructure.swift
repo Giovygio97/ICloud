@@ -13,5 +13,5 @@ struct PhraseStructure: Identifiable{
     var id = UUID()
     var record : CKRecord.ID?
     var sentence : String
-    private var reference: CKRecord.Reference
+    var reference: CKRecord.Reference
 }
