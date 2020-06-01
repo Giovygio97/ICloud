@@ -9,7 +9,7 @@
 import SwiftUI
 import CloudKit
 
-struct PhraseStructure: Identifiable{
+struct PhraseStructure: Identifiable, Hashable{
     var id = UUID()
     var record : CKRecord.ID?
     var sentence : String

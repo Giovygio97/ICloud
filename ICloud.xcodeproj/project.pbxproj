@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3ABF10052473D28E00B9B3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF10042473D28E00B9B3A1 /* AppDelegate.swift */; };
 		3ABF10072473D28E00B9B3A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF10062473D28E00B9B3A1 /* SceneDelegate.swift */; };
-		3ABF100A2473D28E00B9B3A1 /* ICloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF10082473D28E00B9B3A1 /* ICloud.xcdatamodeld */; };
 		3ABF100C2473D28E00B9B3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF100B2473D28E00B9B3A1 /* ContentView.swift */; };
 		3ABF100E2473D29000B9B3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABF100D2473D29000B9B3A1 /* Assets.xcassets */; };
 		3ABF10112473D29000B9B3A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABF10102473D29000B9B3A1 /* Preview Assets.xcassets */; };
@@ -47,7 +46,6 @@
 		3ABF10012473D28E00B9B3A1 /* ICloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABF10042473D28E00B9B3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABF10062473D28E00B9B3A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3ABF10092473D28E00B9B3A1 /* ICloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ICloud.xcdatamodel; sourceTree = "<group>"; };
 		3ABF100B2473D28E00B9B3A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3ABF100D2473D29000B9B3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ABF10102473D29000B9B3A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				3ABF100D2473D29000B9B3A1 /* Assets.xcassets */,
 				3ABF10122473D29000B9B3A1 /* LaunchScreen.storyboard */,
 				3ABF10152473D29000B9B3A1 /* Info.plist */,
-				3ABF10082473D28E00B9B3A1 /* ICloud.xcdatamodeld */,
 				3ABF100F2473D29000B9B3A1 /* Preview Content */,
 			);
 			path = ICloud;
@@ -314,7 +311,6 @@
 				3ABF100C2473D28E00B9B3A1 /* ContentView.swift in Sources */,
 				3ABF104624742D2400B9B3A1 /* PhrasesView.swift in Sources */,
 				3ABF104424742AA200B9B3A1 /* PhraseStructure.swift in Sources */,
-				3ABF100A2473D28E00B9B3A1 /* ICloud.xcdatamodeld in Sources */,
 				3ABF104A24752D8300B9B3A1 /* CloudKitHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,19 +638,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3ABF10082473D28E00B9B3A1 /* ICloud.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3ABF10092473D28E00B9B3A1 /* ICloud.xcdatamodel */,
-			);
-			currentVersion = 3ABF10092473D28E00B9B3A1 /* ICloud.xcdatamodel */;
-			path = ICloud.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3ABF0FF92473D28E00B9B3A1 /* Project object */;
 }

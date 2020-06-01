@@ -9,9 +9,25 @@
 import SwiftUI
 import CloudKit
 
-struct Topic: Identifiable{
-    var id = UUID()
+class Topic: ObservableObject{
+    var id : UUID
     var name: String
     var recordID : CKRecord.ID?
     var phrases: [CKRecord.Reference]?
+    
+    init(n: String, rID: CKRecord.ID, references: [CKRecord.Reference]){
+        self.id = UUID()
+        self.name = n
+        self.recordID! = rID
+        if references.count != 0{
+            self.phrases = references
+        }else{
+            self.phrases = []
+        }
+    }
+    
+    init(name: String){
+        self.id = UUID()
+        self.name = name
+    }
 }
