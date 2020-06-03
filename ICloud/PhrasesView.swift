@@ -18,6 +18,22 @@ struct PhraseView: View {
     var body: some View{
         NavigationView{
             VStack{
+                HStack {
+                    TextField("Insert new Phrase: ", text: $phrase)
+                    Button(action: {
+                        var newPhrase = PhraseStructure(sentence: self.phrase, reference: CKRecord.Reference(recordID: self.topic.recordID!, action: .none))
+                        CloudKitHelper.savePhrase(topic: self.topic, item: newPhrase){final in
+                            switch final{
+                            case .success(let something):
+                                newPhrase.record! = something.record!
+                            case .failure(let err):
+                                print(err.localizedDescription)
+                            }
+                        }
+                    }){
+                        Text("Add")
+                    }
+                }
                 List{
                     ForEach(arrayOfPhrases, id: \.self){info in
                         TextField("", text: self.$phrase)
@@ -30,11 +46,6 @@ struct PhraseView: View {
             }
         }
         .navigationBarTitle(self.topic.name)
-        .navigationBarItems(leading: Button(action: {
-            <#code#>
-        }){
-            Text("Add")
-        })
         .navigationBarItems(trailing: EditButton())
     }
     
