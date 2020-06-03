@@ -36,7 +36,7 @@ struct PhraseView: View {
                 }
                 List{
                     ForEach(arrayOfPhrases, id: \.self){info in
-                        TextField("", text: self.$phrase)
+                        Text(info.sentence)
                     }
                     .onDelete(perform: deleteInfo)
                 }
